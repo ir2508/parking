@@ -1,0 +1,36 @@
+{
+    "carros": [
+        {
+            "vaga": "10",
+            "proprietario": "Nome Teste",
+            "placa": "XXXXXXX",
+            "modelo": "Modelo Teste",
+            "marca": "Marca Teste",
+            "cor": "Cor Teste"
+        },
+        {
+            "vaga": "10",
+            "proprietario": "Nome Teste",
+            "placa": "XXXXXXX",
+            "modelo": "Modelo Teste",
+            "marca": "Marca Teste",
+            "cor": "Cor Teste"
+        },
+        {
+            "vaga": "10",
+            "proprietario": "Nome Teste",
+            "placa": "XXXXXXX",
+            "modelo": "Modelo Teste",
+            "marca": "Marca Teste",
+            "cor": "Cor Teste"
+        },
+        {
+            "vaga": "10",
+            "proprietario": "Nome Teste",
+            "placa": "XXXXXXX",
+            "modelo": "Modelo Teste",
+            "marca": "Marca Teste",
+            "cor": "Cor Teste"
+        }
+    ]
+}
