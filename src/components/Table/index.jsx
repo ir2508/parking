@@ -4,14 +4,16 @@ const Table = ({ columns, data }) => {
             <thead>
                 <tr>
                     {columns.map((column) => (
-                        <th scope="col">{column.label}</th>
+                        <th key={column.key} scope="col">
+                            {column.label}
+                        </th>
                     ))}
                 </tr>
             </thead>
             <tbody>
                 {data.map((item) => {
                     return (
-                        <tr>
+                        <tr key={item.placa}>
                             {columns.map((column) =>
                                 column.key === "acoes" ? (
                                     <td>

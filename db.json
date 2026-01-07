@@ -1,36 +1,98 @@
 {
-    "carros": [
+    "automoveis": [
         {
-            "vaga": "10",
-            "proprietario": "Nome Teste",
+            "codAutomovel": 1,
+            "codCliente": 1,
+            "cliente": "Nome Teste 1",
             "placa": "XXXXXXX",
             "modelo": "Modelo Teste",
             "marca": "Marca Teste",
+            "tipo": "carro",
             "cor": "Cor Teste"
         },
         {
-            "vaga": "10",
-            "proprietario": "Nome Teste",
+            "codAutomovel": 2,
+            "codCliente": 2,
+            "cliente": "Nome Teste 2",
             "placa": "XXXXXXX",
             "modelo": "Modelo Teste",
             "marca": "Marca Teste",
+            "tipo": "carro",
             "cor": "Cor Teste"
         },
         {
-            "vaga": "10",
-            "proprietario": "Nome Teste",
+            "codAutomovel": 3,
+            "codCliente": 3,
+            "cliente": "Nome Teste 3",
             "placa": "XXXXXXX",
             "modelo": "Modelo Teste",
             "marca": "Marca Teste",
+            "tipo": "moto",
             "cor": "Cor Teste"
         },
         {
-            "vaga": "10",
-            "proprietario": "Nome Teste",
+            "codAutomovel": 4,
+            "codCliente": 3,
+            "cliente": "Nome Teste 3",
             "placa": "XXXXXXX",
             "modelo": "Modelo Teste",
             "marca": "Marca Teste",
+            "tipo": "carro",
             "cor": "Cor Teste"
+        }
+    ],
+
+    "clientes": [
+        {
+            "codCliente": 1,
+            "nome": "Cliente Teste 1",
+            "documento": "9999999",
+            "placa": "XXXXXXX",
+            "plano": "mensal",
+            "vencimento": "01/01/2026"
+        },
+        {
+            "codCliente": 2,
+            "nome": "Cliente Teste 2",
+            "documento": "9999999",
+            "placa": "XXXXXXX",
+            "plano": "avulso"
+        },
+        {
+            "codCliente": 3,
+            "nome": "Cliente Teste 3",
+            "documento": "9999999",
+            "placa": "XXXXXXX",
+            "plano": "avulso"
+        }
+    ],
+
+    "vagas": [
+        {
+            "codVaga": 1,
+            "codAutomovel": 1,
+            "codCliente": 1,
+            "statusDisponivel": false,
+            "statusPagamento": "pago"
+        },
+        {
+            "codVaga": 2,
+            "codAutomovel": 2,
+            "codCliente": 2,
+            "statusDisponivel": false,
+            "statusPagamento": "em aberto"
+        },
+        {
+            "codVaga": 3,
+            "codAutomovel": 3,
+            "codCliente": 3,
+            "statusDisponivel": false,
+            "statusPagamento": "em aberto"
+        },
+        {
+            "codVaga": 4,
+            "statusDisponivel": true,
+            "statusPagamento": "em aberto"
         }
     ]
 }

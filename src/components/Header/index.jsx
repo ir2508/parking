@@ -14,8 +14,16 @@ const Header = () => {
                     <div className="collapse navbar-collapse" id="navbarCollapse">
                         <ul className="navbar-nav me-auto mb-2 mb-md-0">
                             <li className="nav-item">
-                                <NavLink className={"nav-link active"} to={"/parking/"}>
-                                    Current
+                                <NavLink className={"nav-link active"} to={"/automoveis/"}>
+                                    Vehicle
+                                </NavLink>
+
+                                <NavLink className={"nav-link"} to={"/clientes/"}>
+                                    Customers
+                                </NavLink>
+
+                                <NavLink className={"nav-link"} to={"/vagas/"}>
+                                    Parking Spaces
                                 </NavLink>
                             </li>
                         </ul>

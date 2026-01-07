@@ -8,12 +8,12 @@ const VehicleList = () => {
     const [vehicleList, setVehicleList] = useRecoilState(vehicleListState)
 
     const tableColumns = [
-        { key: "vaga", label: "Vaga" },
         { key: "placa", label: "Placa" },
         { key: "modelo", label: "Modelo" },
         { key: "marca", label: "Marca" },
         { key: "cor", label: "Cor" },
-        { key: "proprietario", label: "Proprietário" },
+        { key: "tipo", label: "Tipo" },
+        { key: "cliente", label: "Proprietário" },
         { key: "acoes", label: "Ações" },
     ]
 
@@ -21,7 +21,7 @@ const VehicleList = () => {
         const fetchData = async () => {
             try {
                 const response = await api.get()
-                setVehicleList(response.data.carros)
+                setVehicleList(response.data.automoveis)
             } catch (error) {
                 console.error("Falha ao carregar lista de veículos: ", error)
             }
