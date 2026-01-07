@@ -31,3 +31,4 @@ Clone o repositório e instale as dependências:
 git clone [https://github.com/ir2508/parking.git](https://github.com/ir2508/parking.git)
 cd parking
 npm install
+npm run dev
