@@ -8,8 +8,10 @@ export const router = createBrowserRouter([
     {
         path: "/",
         element: <DefaultLayout />,
-        children: [{ path: "/automoveis/", element: <VehicleList /> }],
-        children: [{ path: "/clientes/", element: <CustomerList /> }],
-        children: [{ path: "/vagas/", element: <ParkingSpaces /> }],
+        children: [
+            { path: "/automoveis/", element: <VehicleList /> },
+            { path: "/clientes/", element: <CustomerList /> },
+            { path: "/vagas/", element: <ParkingSpaces /> },
+        ],
     },
 ])
