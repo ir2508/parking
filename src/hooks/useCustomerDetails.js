@@ -23,16 +23,12 @@ export const useCustomerDetails = (customerId) => {
                     customer = response.data
                 }
 
-                console.log(customer)
-
-                let vehicle = vehicles.find((v) => v.placa === customer.placa)
+                let vehicle = vehicles.find((v) => v.id == customer.codAutomovel)
 
                 if (!vehicle) {
-                    const vehicleRes = await api.get(`/automoveis/${vehicle.id}`)
-                    // const vehicleRes = await api.get(`/automoveis/?customerId=${customerId}`)
-                    vehicle = vehicleRes.data[0]
+                    const vehicleRes = await api.get(`/automoveis/${customer.codAutomovel}`)
+                    vehicle = vehicleRes.data
                 }
-
                 setData({ customer, vehicle })
             } catch (err) {
                 setError("Não foi possível carregar os dados completos.")
