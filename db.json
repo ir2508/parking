@@ -1,6 +1,7 @@
 {
     "automoveis": [
         {
+            "id": 1,
             "codAutomovel": 1,
             "codCliente": 1,
             "cliente": "Nome Teste 1",
@@ -11,6 +12,7 @@
             "cor": "Cor Teste"
         },
         {
+            "id": 2,
             "codAutomovel": 2,
             "codCliente": 2,
             "cliente": "Nome Teste 2",
@@ -21,6 +23,7 @@
             "cor": "Cor Teste"
         },
         {
+            "id": 3,
             "codAutomovel": 3,
             "codCliente": 3,
             "cliente": "Nome Teste 3",
@@ -31,6 +34,7 @@
             "cor": "Cor Teste"
         },
         {
+            "id": 4,
             "codAutomovel": 4,
             "codCliente": 3,
             "cliente": "Nome Teste 3",
@@ -44,6 +48,7 @@
 
     "clientes": [
         {
+            "id": 1,
             "codCliente": 1,
             "nome": "Cliente Teste 1",
             "documento": "9999999",
@@ -52,6 +57,7 @@
             "vencimento": "01/01/2026"
         },
         {
+            "id": 2,
             "codCliente": 2,
             "nome": "Cliente Teste 2",
             "documento": "9999999",
@@ -59,6 +65,7 @@
             "plano": "avulso"
         },
         {
+            "id": 3,
             "codCliente": 3,
             "nome": "Cliente Teste 3",
             "documento": "9999999",
@@ -69,6 +76,7 @@
 
     "vagas": [
         {
+            "id": 1,
             "codVaga": 1,
             "codAutomovel": 1,
             "codCliente": 1,
@@ -76,6 +84,7 @@
             "statusPagamento": "pago"
         },
         {
+            "id": 2,
             "codVaga": 2,
             "codAutomovel": 2,
             "codCliente": 2,
@@ -83,6 +92,7 @@
             "statusPagamento": "em aberto"
         },
         {
+            "id": 3,
             "codVaga": 3,
             "codAutomovel": 3,
             "codCliente": 3,
@@ -90,6 +100,7 @@
             "statusPagamento": "em aberto"
         },
         {
+            "id": 4,
             "codVaga": 4,
             "statusDisponivel": true,
             "statusPagamento": "em aberto"
