@@ -4,45 +4,34 @@
             "id": 1,
             "codAutomovel": 1,
             "codCliente": 1,
-            "cliente": "Nome Teste 1",
-            "placa": "XXXXXXX",
-            "modelo": "Modelo Teste",
-            "marca": "Marca Teste",
-            "tipo": "carro",
-            "cor": "Cor Teste"
+            "cliente": "João Batista",
+            "placa": "ABC1D23",
+            "modelo": "Fiesta",
+            "marca": "Ford",
+            "tipo": "Carro",
+            "cor": "Prata"
         },
         {
             "id": 2,
             "codAutomovel": 2,
             "codCliente": 2,
-            "cliente": "Nome Teste 2",
-            "placa": "XXXXXXX",
-            "modelo": "Modelo Teste",
-            "marca": "Marca Teste",
-            "tipo": "carro",
-            "cor": "Cor Teste"
+            "cliente": "Eduardo Pinheiro",
+            "placa": "EFG1H23",
+            "modelo": "Focus",
+            "marca": "Ford",
+            "tipo": "Carro",
+            "cor": "Vermelho"
         },
         {
             "id": 3,
             "codAutomovel": 3,
             "codCliente": 3,
-            "cliente": "Nome Teste 3",
-            "placa": "XXXXXXX",
-            "modelo": "Modelo Teste",
-            "marca": "Marca Teste",
-            "tipo": "moto",
-            "cor": "Cor Teste"
-        },
-        {
-            "id": 4,
-            "codAutomovel": 4,
-            "codCliente": 3,
-            "cliente": "Nome Teste 3",
-            "placa": "XXXXXXX",
-            "modelo": "Modelo Teste",
-            "marca": "Marca Teste",
-            "tipo": "carro",
-            "cor": "Cor Teste"
+            "cliente": "Ana Souza",
+            "placa": "IJK1L23",
+            "modelo": "Vulcan",
+            "marca": "Kawasaki",
+            "tipo": "Moto",
+            "cor": "Preta"
         }
     ],
 
@@ -51,29 +40,29 @@
             "id": 1,
             "codCliente": 1,
             "codAutomovel": 1,
-            "nome": "Cliente Teste 1",
-            "documento": "9999999",
-            "placa": "XXXXXXX",
-            "plano": "mensal",
+            "nome": "João Batista",
+            "documento": "099.092.980-90",
+            "placa": "ABC1D23",
+            "plano": "Mensal",
             "vencimento": "01/01/2026"
         },
         {
             "id": 2,
             "codCliente": 2,
             "codAutomovel": 2,
-            "nome": "Cliente Teste 2",
-            "documento": "9999999",
-            "placa": "XXXXXXX",
-            "plano": "avulso"
+            "nome": "Eduardo Pinheiro",
+            "documento": "207.280.620-89",
+            "placa": "EFG1H23",
+            "plano": "Avulso"
         },
         {
             "id": 3,
             "codCliente": 3,
             "codAutomovel": 3,
-            "nome": "Cliente Teste 3",
-            "documento": "9999999",
-            "placa": "XXXXXXX",
-            "plano": "avulso"
+            "nome": "Ana Souza",
+            "documento": "496.268.960-60",
+            "placa": "IJK1L23",
+            "plano": "Avulso"
         }
     ],
 

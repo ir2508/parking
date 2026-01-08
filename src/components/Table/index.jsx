@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom"
+
 const Table = ({ columns, data }) => {
+    const navigate = useNavigate()
+
     return (
         <table className="table table-striped">
             <thead>
@@ -13,7 +17,7 @@ const Table = ({ columns, data }) => {
             <tbody>
                 {data.map((item) => {
                     return (
-                        <tr key={item.placa}>
+                        <tr key={item.id} onClick={() => navigate(`${item.id}`)} style={{ cursor: "pointer" }}>
                             {columns.map((column) =>
                                 column.key === "acoes" ? (
                                     <td>

@@ -11,6 +11,7 @@ export const router = createBrowserRouter([
         element: <DefaultLayout />,
         children: [
             { path: "/automoveis/", element: <VehicleList /> },
+            { path: "/automoveis/:customerId", element: <CustomerDetail /> },
             { path: "/clientes/", element: <CustomerList /> },
             { path: "/clientes/:customerId", element: <CustomerDetail /> },
             { path: "/vagas/", element: <ParkingSpaces /> },
