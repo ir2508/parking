@@ -50,6 +50,7 @@
         {
             "id": 1,
             "codCliente": 1,
+            "codAutomovel": 1,
             "nome": "Cliente Teste 1",
             "documento": "9999999",
             "placa": "XXXXXXX",
@@ -59,6 +60,7 @@
         {
             "id": 2,
             "codCliente": 2,
+            "codAutomovel": 2,
             "nome": "Cliente Teste 2",
             "documento": "9999999",
             "placa": "XXXXXXX",
@@ -67,6 +69,7 @@
         {
             "id": 3,
             "codCliente": 3,
+            "codAutomovel": 3,
             "nome": "Cliente Teste 3",
             "documento": "9999999",
             "placa": "XXXXXXX",

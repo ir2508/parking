@@ -3,6 +3,7 @@ import DefaultLayout from "../layouts/DefaultLayout"
 import VehicleList from "../pages/VehicleList"
 import CustomerList from "../pages/CustomerList"
 import ParkingSpaces from "../pages/ParkingSpaces"
+import CustomerDetail from "../pages/CustomerDetail"
 
 export const router = createBrowserRouter([
     {
@@ -11,6 +12,7 @@ export const router = createBrowserRouter([
         children: [
             { path: "/automoveis/", element: <VehicleList /> },
             { path: "/clientes/", element: <CustomerList /> },
+            { path: "/clientes/:customerId", element: <CustomerDetail /> },
             { path: "/vagas/", element: <ParkingSpaces /> },
         ],
     },

@@ -20,8 +20,8 @@ const VehicleList = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await api.get()
-                setVehicleList(response.data.automoveis)
+                const response = await api.get("/automoveis/")
+                setVehicleList(response.data)
             } catch (error) {
                 console.error("Falha ao carregar lista de veículos: ", error)
             }
