@@ -18,8 +18,8 @@ const CustomerList = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await api.get()
-                setCustomerList(response.data.clientes)
+                const response = await api.get("/clientes/")
+                setCustomerList(response.data)
             } catch (error) {
                 console.error("Falha ao carregar lista de clientes: ", error)
             }

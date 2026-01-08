@@ -18,8 +18,8 @@ const ParkingSpaces = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await api.get()
-                setParkingSpaces(response.data.vagas)
+                const response = await api.get("/vagas/")
+                setParkingSpaces(response.data)
             } catch (error) {
                 console.error("Falha ao carregar lista de vagas: ", error)
             }
