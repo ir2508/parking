@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom"
+import ButtonModal from "../ButtonModal"
+import ModalNewVehicle from "../ModalNewVehicle"
 
 const Header = () => {
     return (
@@ -17,14 +19,22 @@ const Header = () => {
                                 <NavLink className={"nav-link"} to={"/automoveis/"}>
                                     Vehicle
                                 </NavLink>
+                            </li>
 
+                            <li className="nav-item">
                                 <NavLink className={"nav-link"} to={"/clientes/"}>
                                     Customers
                                 </NavLink>
+                            </li>
 
+                            <li className="nav-item">
                                 <NavLink className={"nav-link"} to={"/vagas/"}>
                                     Parking Spaces
                                 </NavLink>
+                            </li>
+
+                            <li className="nav-item">
+                                <ButtonModal>Cadastrar entrada</ButtonModal>
                             </li>
                         </ul>
                         <form className="d-flex" role="search">
