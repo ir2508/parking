@@ -4,6 +4,7 @@ import VehicleList from "../pages/VehicleList"
 import CustomerList from "../pages/CustomerList"
 import ParkingSpaces from "../pages/ParkingSpaces"
 import CustomerDetail from "../pages/CustomerDetail"
+import SearchResults from "../pages/SearchResults"
 
 export const router = createBrowserRouter([
     {
@@ -15,6 +16,7 @@ export const router = createBrowserRouter([
             { path: "/clientes/", element: <CustomerList /> },
             { path: "/clientes/:customerId", element: <CustomerDetail /> },
             { path: "/vagas/", element: <ParkingSpaces /> },
+            { path: "/pesquisar", element: <SearchResults /> },
         ],
     },
 ])

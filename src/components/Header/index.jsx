@@ -1,8 +1,22 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
 import ButtonModal from "../ButtonModal"
-import ModalNewVehicle from "../ModalNewVehicle"
+import { useState } from "react"
+import Button from "../Button"
+import Input from "../Input"
 
 const Header = () => {
+    const navigate = useNavigate()
+    const [searchQuery, setSearchQuery] = useState()
+
+    const handleSearchClick = (e) => {
+        navigate(`/pesquisar?q=${encodeURIComponent(searchQuery)}`)
+        e.preventDefault()
+    }
+
+    const onChangeSearchQuery = (e) => {
+        setSearchQuery(e.target.value)
+    }
+
     return (
         <header>
             <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -38,10 +52,12 @@ const Header = () => {
                             </li>
                         </ul>
                         <form className="d-flex" role="search">
-                            <input className="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" />
-                            <button className="btn btn-outline-success" type="submit">
-                                Pesquisar
-                            </button>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Digite para pesquisar" onChange={onChangeSearchQuery} value={searchQuery} aria-describedby="button-addon2" />
+                                <Button btnClass={"btn-outline-success"} onclick={handleSearchClick}>
+                                    Pesquisar
+                                </Button>
+                            </div>
                         </form>
                     </div>
                 </div>
